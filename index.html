@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teemo - El Explorador Veloz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="imagenes/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header id="teemo">
+        <div class="hero">
+            <div class="overlay"></div>
+            <div class="content">
+                <h1>EL EXPLORADOR VELOZ</h1>
+                <h2>Teemo</h2>
+                <p>Sin inmutarse siquiera por los obstáculos más peligrosos y amenazantes, Teemo explora el mundo con un entusiasmo infinito y una alegría desbordante. Con un inquebrantable sentido de la moralidad, este yordle se enorgullece de seguir el Código de los...</p>
+                <div class="buttons">
+                    <button class="btn btn-outline-light" id="btn-habilidades">Ver Habilidades</button>
+                    <button class="btn btn-outline-light" id="btn-dato-curioso">Ver Dato Curioso</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="habilidades" class="section hidden">
+        <div class="container text-center text-white">
+            <h2>Habilidades de Teemo</h2>
+            <div class="row mt-4">
+                <div class="col-md-3">
+                    <img src="imagenes/habilidad1.png" alt="Dardo Cegador" class="img-fluid habilidad" data-habilidad="Q - Dardo Cegador" data-video="videos/video1.mp4">
+                </div>
+                <div class="col-md-3">
+                    <img src="imagenes/habilidad2.png" alt="Movimiento Rápido" class="img-fluid habilidad" data-habilidad="W - Movimiento Rápido" data-video="videos/video2.mp4">
+                </div>
+                <div class="col-md-3">
+                    <img src="imagenes/habilidad3.png" alt="Disparos Tóxicos" class="img-fluid habilidad" data-habilidad="E - Disparos Tóxicos" data-video="videos/video3.mp4">
+                </div>
+                <div class="col-md-3">
+                    <img src="imagenes/habilidad4.png" alt="Trampa Venenosa" class="img-fluid habilidad" data-habilidad="R - Trampa Venenosa" data-video="videos/video4.mp4">
+                </div>
+            </div>
+            <div id="habilidad-texto" class="mt-4"></div>
+            <div id="habilidad-video" class="mt-4"></div>
+        </div>
+    </section>
+
+    <section id="dato-curioso" class="section hidden">
+        <div class="container text-center text-white">
+            <h2>Dato Curioso</h2>
+            <div id="dato-curioso-texto" class="mt-4"></div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
